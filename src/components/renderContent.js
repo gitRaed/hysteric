@@ -1,8 +1,10 @@
+import { CartPage } from './content/cartPage';
 import { Homepage } from './content/homepage';
 import { Tshirts } from './content/tshirts';
 import { Hoodies } from './content/hoodies';
 import { Prints } from './content/prints';
 import { Others } from './content/others';
+import { AboutPage } from './content/aboutPage';
 import { ErrorPage } from './content/errorPage';
 
 
@@ -11,6 +13,9 @@ export function RenderContent(number) {
     let content;
 
     switch(number) {
+        case 0:
+            content = <CartPage />
+        break;
         case 1: 
             content = <Homepage />
         break;
@@ -25,6 +30,9 @@ export function RenderContent(number) {
         break;
         case 5: 
             content = <Others />
+        break;
+        case 6: 
+            content = <AboutPage />
         break;
         default: 
             content = <ErrorPage />
