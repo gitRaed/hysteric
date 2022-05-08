@@ -1,6 +1,6 @@
 # Disclaimer
 
-    ***This website is for training purpose only and to hone my skills.
+    ***This website **is** for training purpose only and to hone my skills.
 
     The articles present on this website aren’t sell, the original links of those articles will be shown.
 
