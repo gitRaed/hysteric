@@ -1,13 +1,21 @@
 # Disclaimer
 
-    **This website is for training purpose only and to hone my skills. The articles present on this website aren’t sell, the original links of those articles will be shown. Please pay a visit to the originals shops if you’re interested in an article.**
+    ***This website is for training purpose only and to hone my skills.
 
-    The products shown on this website are made by incredible artist. Please support them if you like one of their products. Each article will have a link to it's original shop(website which those pictures where taken from).
-    
+    The articles present on this website aren’t sell, the original links of those articles will be shown.
+
+    Please pay a visit to the originals shops if you’re interested in an article.***
+
+    The products shown on this website are made by incredible artist.
+
+    Please support them if you like one of their products.
+
+    Each article will have a link to it's original shop(website which those pictures where taken from).
+
     Here are their links:
-        - Paiheme studio : [Link](https://paihemestudio.com)
-        - Inferno visions : [Link](https://infernovisions.bigcartel.com)
-        - Fearless apparel : [Link](https://www.fearlessapparel.com/men/)
+        - [Paiheme studio](https://paihemestudio.com)
+        - [Inferno visions](https://infernovisions.bigcartel.com)
+        - [Fearless apparel](https://www.fearlessapparel.com/men/)
 
 # About
 
