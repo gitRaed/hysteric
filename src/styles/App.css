@@ -2,4 +2,41 @@
 
 body {
     font-family: 'Macondo';
+    background-color: #e3e2df;
+}
+
+header{
+    background-color: #5d001e;
+    text-align: right;
+    padding: 1.5vh 3vh 1vh 0;
+    height: 5vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cart, .cartNumber {
+    color: #e3afbc ;
+}
+
+.cart {
+    cursor: pointer;
+    height: 80%;
+}
+
+.cart:hover {
+    color: #ee4c7c;
+}
+
+.renderContent{
+    height: 100%;
+    max-width: 70vmax;
+    position: relative;
+    left: 21vmax;
+    padding: 3vh;
+}
+
+h1 {
+    text-align: center;
 }

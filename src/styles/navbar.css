@@ -1,8 +1,7 @@
 .div-navbar {
     background-color: #5d001e;
     color: #e3afbc ;
-    border-right: 1px solid black;
-    width: 40vh;
+    max-width: 18vmax;
     height: 100%;
     padding: 40px 1% 0 1%;
     position: fixed;
@@ -34,8 +33,7 @@ nav ul li span {
 .socials {
     position: relative;
     top: 15vh;
-    height: 4vh;
-    padding: 2vh;
+    height: 2vmax;
 }
 
 a {
@@ -44,7 +42,7 @@ a {
 
 .socials-icon {
     height: 100%;
-    padding: 1.5vh;
+    padding: 0.5vmax;
     cursor: pointer;
     border: 2px solid #5d001e;
 }

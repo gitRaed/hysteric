@@ -8,9 +8,10 @@ import { AboutPage } from './content/aboutPage';
 import { ErrorPage } from './content/errorPage';
 
 
-export function RenderContent(number) {
+export function RenderContent(props) {
 
     let content;
+    let number = props.number;
 
     switch(number) {
         case 0:

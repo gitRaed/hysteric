@@ -1,5 +1,5 @@
-import '../../styles/homepage.css';
-import '../../styles/homepageMobile.css';
+import '../../styles/contentStyles/homepage.css'
+import '../../styles/contentStyles/homepageMobile.css';
 
 export const Homepage = function() {
 

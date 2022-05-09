@@ -1,0 +1,22 @@
+.aboutPage {
+    margin-bottom: 20px;
+}
+
+.aboutPage a:hover {
+    color: #5d001e;
+    border-bottom: 1px solid #5d001e;
+}
+
+.aboutMyself, .contacts {
+    font-family: none;
+    border-radius: 15px;
+    box-shadow: 0 0 5px black;
+    line-height: 5vh;
+    padding: 2vh;
+    margin: 2vh 0 0 0;
+    font-size: 18px;
+}
+
+.colone1 {
+    text-align: right;
+}
