@@ -1,0 +1,55 @@
+.div-navbar {
+    background-color: #5d001e;
+    color: #e3afbc ;
+    border-right: 1px solid black;
+    width: 40vh;
+    height: 100%;
+    padding: 40px 1% 0 1%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+
+.img-div img {
+    height: auto;
+    width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0 0 0 15px;
+    font-size: 20px;
+}
+
+nav ul li {
+    padding: 10px 0 10px 0;
+}
+
+nav ul li span {
+    cursor: pointer;
+}
+
+.socials {
+    position: relative;
+    top: 15vh;
+    height: 4vh;
+    padding: 2vh;
+}
+
+a {
+    color: #e3afbc ;
+}
+
+.socials-icon {
+    height: 100%;
+    padding: 1.5vh;
+    cursor: pointer;
+    border: 2px solid #5d001e;
+}
+
+nav ul li span:hover, .socials-icon:hover{
+    color: #ee4c7c;
+    border-bottom: 2px solid #ee4c7c;
+}
