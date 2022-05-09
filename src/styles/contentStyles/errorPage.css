@@ -1,0 +1,13 @@
+.errorPage {
+    font-size: 1.5vmax;
+}
+
+.errorPage span {
+    cursor: pointer;
+    color: #ee4c7c;
+}
+
+.errorPage span:hover{
+    color: #5d001e;
+    border-bottom: 1px solid #5d001e;
+}

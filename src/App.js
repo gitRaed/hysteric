@@ -9,7 +9,7 @@ import { RenderContent } from './components/renderContent';
 
 function App() {
 
-  const [display, setDisplay] = useState(1);
+  const [display, setDisplay] = useState(10);
   const [cartNumber, setCartNumber] = useState(0);
 
   return (
@@ -21,7 +21,7 @@ function App() {
       </header>
 
       <div className='renderContent'>
-        <RenderContent number={display}/>
+        <RenderContent number={display} setDisplay={setDisplay}/>
       </div>
 
       <footer>Footer here</footer>

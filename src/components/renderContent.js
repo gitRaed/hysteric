@@ -12,6 +12,7 @@ export function RenderContent(props) {
 
     let content;
     let number = props.number;
+    let setDisplay = props.setDisplay;
 
     switch(number) {
         case 0:
@@ -36,7 +37,7 @@ export function RenderContent(props) {
             content = <AboutPage />
         break;
         default: 
-            content = <ErrorPage />
+            content = <ErrorPage setDisplay={setDisplay}/>
         break;
     };
 
