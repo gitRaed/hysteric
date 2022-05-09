@@ -18,12 +18,12 @@
 
 nav ul{
     list-style-type: none;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 2vmax;
     font-size: 20px;
 }
 
 nav ul li {
-    padding: 10px 0 10px 0;
+    padding: 1vmax 0 1vmax 0;
 }
 
 nav ul li span {
@@ -32,7 +32,7 @@ nav ul li span {
 
 .socials {
     position: relative;
-    top: 15vh;
+    top: 2vmax;
     height: 2vmax;
 }
 
@@ -42,7 +42,7 @@ a {
 
 .socials-icon {
     height: 100%;
-    padding: 0.5vmax;
+    padding: 0 0.5vmax 0 0.5vmax;
     cursor: pointer;
     border: 2px solid #5d001e;
 }
