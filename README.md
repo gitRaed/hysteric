@@ -26,4 +26,4 @@ This project will be add on my portfolio. Do check my [website](https://gitraed.
 
 # Tech used
 
-This project is made with React.js, create-react-app and react-boostrap
+This project is made with React.js, create-react-app and react-fontawesome
