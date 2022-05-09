@@ -9,7 +9,7 @@ import { RenderContent } from './components/renderContent';
 
 function App() {
 
-  const [display, setDisplay] = useState(10);
+  const [display, setDisplay] = useState(5);
   const [cartNumber, setCartNumber] = useState(0);
 
   return (
