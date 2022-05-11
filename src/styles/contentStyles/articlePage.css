@@ -1,0 +1,105 @@
+.articlePage {
+    border: 2px solid #e3afbc;
+    border-radius: 15px;
+    width: 100%;
+    padding: 2%;
+}
+
+.articlePage figure {
+    width: 40%;
+}
+
+.articlePage figure img {
+    height: 25vmax;
+}
+
+.articleDetails {
+    float: right;
+    width: 35vmax;
+    position: relative;
+    top: 120px;
+    right: 24px;
+    font-size: 1.2em;
+}
+
+.articleDetails table:first-child {
+    width: 100%;
+}
+
+.articleDetails table tr {
+    height: 2vmax;
+}
+
+.articleDetails table td:nth-child(1) {
+    width: 75px;
+    padding: 1%;
+}
+
+.articleDetails input {
+    background-color: #e3e2df;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 11%;
+}
+
+.articleDetails button {
+    padding: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #9A1750 ;
+    background-color: #9A1750;
+    color: #e3afbc;
+    font-size: 0.8em;
+}
+
+.articleDetails button:hover {
+    background-color: #ee4c7c;
+    border: 2px solid #ee4c7c;
+}
+
+@media only screen and (max-width: 768px){
+
+    .articlePage {
+        height: 85vmax;
+        padding: 0;
+    }
+
+    .articlePage figure {
+        width: 100%;
+        
+    }
+
+    .articlePage figure img {
+        width: 80%;
+        height: auto;
+    }
+
+    .articleDetails {
+        float: none;
+        position: absolute;
+        top: 75vmax;
+        left: 80px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+
+    .articlePage {
+        height: 100vmax;
+    }
+
+    .articleDetails {
+        top: 85vmax;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    
+    .articlePage{
+        height: 85vmax;
+    }
+
+    .articleDetails {
+        top: 72vmax;
+    }
+}
