@@ -5,6 +5,7 @@ import { Hoodies } from './content/hoodies';
 import { Prints } from './content/prints';
 import { Others } from './content/others';
 import { AboutPage } from './content/aboutPage';
+import { ArticlePage } from './content/articlePage';
 import { ErrorPage } from './content/errorPage';
 
 
@@ -31,10 +32,13 @@ export function RenderContent(props) {
             content = <Prints />
         break;
         case 5: 
-            content = <Others />
+            content = <Others setDisplay={setDisplay}/>
         break;
         case 6: 
             content = <AboutPage />
+        break;
+        case 7:
+            content = <ArticlePage setDisplay={setDisplay}/>
         break;
         default: 
             content = <ErrorPage setDisplay={setDisplay}/>
