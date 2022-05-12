@@ -12,12 +12,11 @@ import { ErrorPage } from './content/errorPage';
 export function RenderContent(props) {
 
     let content;
-    let number = props.number;
-    let setDisplay = props.setDisplay;
+    let { number, setDisplay, cart, setCart } = props;
 
     switch(number) {
         case 0:
-            content = <CartPage />
+            content = <CartPage cart={cart} setCart={setCart}/>
         break;
         case 1: 
             content = <Homepage />
@@ -38,7 +37,7 @@ export function RenderContent(props) {
             content = <AboutPage />
         break;
         case 7:
-            content = <ArticlePage setDisplay={setDisplay}/>
+            content = <ArticlePage setDisplay={setDisplay} cart={cart} setCart={setCart}/>
         break;
         default: 
             content = <ErrorPage setDisplay={setDisplay}/>

@@ -10,18 +10,18 @@ import { RenderContent } from './components/renderContent';
 function App() {
 
   const [display, setDisplay] = useState(5);
-  const [cartNumber, setCartNumber] = useState(0);
+  const [cart, setCart] = useState([]); //there is a bug i think with the set param of useState, surely mb
 
   return (
     <div className="App">
       <Navbar setDisplay={setDisplay}/>
       <header>
-        <span className='cartNumber'>{cartNumber}</span>
+        <span className='cartNumber'>{cart.length}</span>
         <FontAwesomeIcon className='cart' icon={faCartShopping} onClick={() => {setDisplay(0)}}/>
       </header>
 
       <div className='renderContent'>
-        <RenderContent number={display} setDisplay={setDisplay}/>
+        <RenderContent number={display} setDisplay={setDisplay} cart={cart} setCart={setCart}/>
       </div>
 
       <footer>Footer here</footer>

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
 import '../../styles/contentStyles/articlePage.css';
-import { addItemToCart } from './cartPage';
 
 //#region product
 let product;
@@ -15,9 +14,10 @@ export function setItem(item) {
 }
 //#endregion
 
-export function ArticlePage() {
+export function ArticlePage(props) {
 
     const item = getItem();
+    const { cart } = props;
 
     const [quantity, setQuantity] = useState(1);
     const [price] = useState(item.price);
@@ -26,17 +26,14 @@ export function ArticlePage() {
     
 
     function onChangeHandler(event) {
-        let data = event.target.value;
-        setQuantity(data);
+        setQuantity(event.target.value);
     }
 
     function addToCart(event, item) {
         event.preventDefault();
         item.finalPrice = finalPrice;
         item.quantity = quantity;
-        // send finalPrice, quantity and item details to cart
-        console.log(item);
-        addItemToCart(item);
+        cart.push(item);
         setMessage('Added to cart !');
     }
     
