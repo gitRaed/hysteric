@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import '../../styles/contentStyles/articlePage.css';
+import { addItemToCart } from './cartPage';
 
 //#region product
 let product;
@@ -21,6 +22,7 @@ export function ArticlePage() {
     const [quantity, setQuantity] = useState(1);
     const [price] = useState(item.price);
     let finalPrice = parseFloat((price*quantity).toFixed(2));
+    const [message, setMessage] = useState('');
     
 
     function onChangeHandler(event) {
@@ -30,8 +32,12 @@ export function ArticlePage() {
 
     function addToCart(event, item) {
         event.preventDefault();
+        item.finalPrice = finalPrice;
+        item.quantity = quantity;
         // send finalPrice, quantity and item details to cart
-        console.log(finalPrice, item);
+        console.log(item);
+        addItemToCart(item);
+        setMessage('Added to cart !');
     }
     
 
@@ -40,21 +46,24 @@ export function ArticlePage() {
             <div className="articleDetails">
                 <form>
                     <table>
-                        <tr>
-                            <td><label name='quantity'>QTY</label></td>
-                            <td>{finalPrice}{item.currency}</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input id="quantity" name="quantity" min="1" max="5" autoComplete="off" type="number" 
-                                onChange={event => onChangeHandler(event)} value={quantity} 
-                                />
-                            </td>
-                            <td>
-                                <button id="submit" name="submit" type="submit" 
-                                onClick={event => addToCart(event, item)}>Add to cart</button>
-                            </td>
-                        </tr>
+                        <tbody>
+                            <tr>
+                                <td><label name='quantity'>QTY</label></td>
+                                <td>{finalPrice}{item.currency}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="quantity" name="quantity" min="1" max="10" required autoComplete="off" type="number" 
+                                    onChange={event => onChangeHandler(event)} value={quantity} 
+                                    />
+                                </td>
+                                <td>
+                                    <button id="submit" name="submit" type="submit" 
+                                    onClick={event => addToCart(event, item)}>Add to cart</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>{message}</tfoot>
                     </table>
                 </form>
             </div>
