@@ -51,7 +51,7 @@ export function CartPage(props) {
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td>Total Price :</td>
+                                <td><label for="totalPrice">Total Price :</label></td>
                                 <td>
                                     {parseFloat(totalPrice.toFixed(2))}$<br/>
                                     <button type="submit" name="purchase" id="purchase" 
