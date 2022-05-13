@@ -59,9 +59,11 @@ export function ArticlePage(props) {
                                     onClick={event => addToCart(event, item)}>Add to cart</button>
                                 </td>
                             </tr>
+                            <tr>
+                                <td colSpan="2">{message}</td>
+                            </tr>
                         </tbody>
                     </table>
-                    <p>{message}</p>
                 </form>
             </div>
             <figure>

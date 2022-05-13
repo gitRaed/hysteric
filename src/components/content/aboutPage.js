@@ -20,20 +20,22 @@ export function AboutPage() {
             <h2>My contacts</h2> <hr/>
             <div className='contacts'>
                 <table>
-                    <tr>
-                        <td className="colone1">My Email :</td>
-                        <td><a target="_blank" href="mailto:raedfaddoul@gmail.com" rel="noreferrer"> raedfaddoul@gmail.com</a> </td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td className="colone1">My Email :</td>
+                            <td><a target="_blank" href="mailto:raedfaddoul@gmail.com" rel="noreferrer"> raedfaddoul@gmail.com</a> </td>
+                        </tr>
 
-                    <tr>
-                        <td className="colone1">My Github :</td>
-                        <td><a target="_blank" href="https://github.com/gitRaed" rel="noreferrer">gitRaed</a> </td>
-                    </tr>
+                        <tr>
+                            <td className="colone1">My Github :</td>
+                            <td><a target="_blank" href="https://github.com/gitRaed" rel="noreferrer">gitRaed</a> </td>
+                        </tr>
 
-                    <tr>
-                        <td className="colone1">My LinkedIn :</td>
-                        <td> <a target="_blank" href="https://www.linkedin.com/in/raed-faddoul-63b414193/" rel="noreferrer"> Faddoul Raed</a> </td>
-                    </tr>
+                        <tr>
+                            <td className="colone1">My LinkedIn :</td>
+                            <td> <a target="_blank" href="https://www.linkedin.com/in/raed-faddoul-63b414193/" rel="noreferrer"> Faddoul Raed</a> </td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
         </div>

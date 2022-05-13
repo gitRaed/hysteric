@@ -13,7 +13,6 @@ export function DisclaimerPage() {
                 <ol><a target="_blank" rel="noreferrer" href='https://www.fearlessapparel.com/men/'>Fearless Apparel</a></ol>
             </ul>
             Socials links on the navbar are not real one to, since it’s not a real online shop ! <br/>
-            The socials media links below are mine and not for this 'fake' online shop !!
         </div>
     )
 }
