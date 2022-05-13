@@ -14,17 +14,17 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar setDisplay={setDisplay}/>
-      <header>
-        <span className='cartNumber'>{cart.length}</span>
-        <FontAwesomeIcon className='cart' icon={faCartShopping} onClick={() => {setDisplay(0)}}/>
-      </header>
+      <main>
+        <Navbar setDisplay={setDisplay}/>
+        <header>
+          <span className='cartNumber'>{cart.length}</span>
+          <FontAwesomeIcon className='cart' icon={faCartShopping} onClick={() => {setDisplay(0)}}/>
+        </header>
 
-      <div className='renderContent'>
-        <RenderContent number={display} setDisplay={setDisplay} cart={cart} setCart={setCart}/>
-      </div>
-
-      <footer>Footer here</footer>
+        <div className='renderContent'>
+          <RenderContent number={display} setDisplay={setDisplay} cart={cart} setCart={setCart}/>
+        </div>
+      </main>
     </div>
   );
 }
