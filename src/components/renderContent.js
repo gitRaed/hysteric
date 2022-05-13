@@ -19,16 +19,16 @@ export function RenderContent(props) {
             content = <CartPage cart={cart} setCart={setCart} setDisplay={setDisplay}/>
         break;
         case 1: 
-            content = <Homepage />
+            content = <Homepage setDisplay={setDisplay}/>
         break;
         case 2: 
-            content = <Tshirts />
+            content = <Tshirts setDisplay={setDisplay}/>
         break;
         case 3: 
-            content = <Hoodies />
+            content = <Hoodies setDisplay={setDisplay}/>
         break;
         case 4: 
-            content = <Prints />
+            content = <Prints setDisplay={setDisplay}/>
         break;
         case 5: 
             content = <Others setDisplay={setDisplay}/>

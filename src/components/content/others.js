@@ -3,7 +3,7 @@ import { MapArticles } from './mapArticles';
 
 export const Others = function(props) {
 
-    const setDisplay = props.setDisplay;
+    const { setDisplay } = props;
 
     return(
         <div>
