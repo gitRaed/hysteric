@@ -22,7 +22,7 @@ export function ArticlePage(props) {
     const [quantity, setQuantity] = useState(1);
     const [price] = useState(item.price);
     let finalPrice = parseFloat((price*quantity).toFixed(2));
-    const [message, setMessage] = useState('');
+    const [message, setMessage] = useState('Click to add to cart');
     
 
     function onChangeHandler(event) {
@@ -60,8 +60,8 @@ export function ArticlePage(props) {
                                 </td>
                             </tr>
                         </tbody>
-                        <tfoot>{message}</tfoot>
                     </table>
+                    <p>{message}</p>
                 </form>
             </div>
             <figure>

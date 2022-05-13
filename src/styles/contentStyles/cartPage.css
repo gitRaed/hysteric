@@ -1,0 +1,51 @@
+.cartPage h3 {
+    text-align: center;
+}
+
+.cartPage table {
+    border: 2px solid #9A1750 ;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.8vmax;
+}
+
+.cartPage table tbody tr {
+    height: 15vmax;
+}
+
+.cartPage table tr:nth-child(1) {
+    height: 40px;
+}
+
+.cartPage table td:nth-child(1) {
+    width: 1vmax;
+}
+
+.cartPage table td:nth-child(3), .cartPage table td:nth-child(4) {
+    width: 5vmax;
+    text-align: center;
+}
+
+.cartPage table button {
+    border: 2px solid #9A1750;
+    background-color: #e3e2df;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #9A1750;
+}
+
+.cartPage table button:hover {
+    background-color: #ee4c7c;
+}
+
+.cartPage table td img {
+    height: 10vmax;
+}
+
+.cartPage figure figcaption {
+    display: inline-block;
+    position: relative;
+    bottom: 3vmax;
+    line-height: 3vmax;
+    padding-left: 2vmax;
+}

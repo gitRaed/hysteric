@@ -16,7 +16,7 @@ export function RenderContent(props) {
 
     switch(number) {
         case 0:
-            content = <CartPage cart={cart} setCart={setCart}/>
+            content = <CartPage cart={cart} setCart={setCart} setDisplay={setDisplay}/>
         break;
         case 1: 
             content = <Homepage />
