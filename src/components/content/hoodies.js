@@ -7,7 +7,7 @@ export const Hoodies = function(props) {
 
     return(
         <div>
-            <h1>Others articles</h1>
+            <h1>Hoodies</h1>
             <MapArticles products={hoodies} setDisplay={setDisplay} />
         </div>
     )

@@ -9,7 +9,7 @@ import { RenderContent } from './components/renderContent';
 
 function App() {
 
-  const [display, setDisplay] = useState(5);
+  const [display, setDisplay] = useState(1);
   const [cart, setCart] = useState([]); //there is a bug i think with the set param of useState, surely mb
 
   return (
